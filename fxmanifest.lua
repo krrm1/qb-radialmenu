@@ -6,7 +6,7 @@ client_script {
     '@PolyZone/EntityZone.lua',
     '@PolyZone/CircleZone.lua',
     '@PolyZone/ComboZone.lua',
-    -- '@arabcodingteam-garages/config.lua',
+    '@arabcodingteam-garages/config.lua',
     "config.lua",
     "client/main.lua",
 	"client/utils.lua",
