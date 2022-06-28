@@ -1,4 +1,4 @@
-local QBCore = exports['kd-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 
 function getVehicleInDirection(coordFrom, coordTo)
 	local offset = 0
