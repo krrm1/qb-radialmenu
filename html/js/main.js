@@ -34,12 +34,12 @@ function createMenu(items) {
             
             if (item.event !== null) {
                 if (item.data !== null) {
-                    $.post('https://kd-radialmenu/selectItem', JSON.stringify({
+                    $.post('https://arabcodingteam-radialmenu/selectItem', JSON.stringify({
                         itemData: item,
                         data: item.data
                     }))
                 } else {
-                    $.post('https://kd-radialmenu/selectItem', JSON.stringify({
+                    $.post('https://arabcodingteam-radialmenu/selectItem', JSON.stringify({
                         itemData: item
                     }))
                 }
