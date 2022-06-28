@@ -1,7 +1,7 @@
 # arabcodingteam-radialmenu
 arabcodingteam-radialmenu np style
 
-need : https://github.com/arabcodingteam/arabcodingteam-garages
+arabcodingteam-garages : https://github.com/arabcodingteam/arabcodingteam-garages
 
 *
 
