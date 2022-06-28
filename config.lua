@@ -1,4 +1,4 @@
-local QBCore = exports['kd-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 local inGarage = false
 local inDepots = false
 local inJobGarage = false
@@ -290,7 +290,7 @@ newSubMenus = {
     ['general:givenum'] = {
         title = "Give contact",
         icon = "#globe-phone",
-        functionName = "kd-phone:client:GiveContactDetails"
+        functionName = "arabcodingteam-phone:client:GiveContactDetails"
     }, 
     -- actions
     ['vehicle:putin'] = {
@@ -312,7 +312,7 @@ newSubMenus = {
     ['actions:sell'] = {
         title = "Corner Selling",
         icon = "#weed-cultivation",
-        functionName = "kd-drugs:client:cornerselling"
+        functionName = "arabcodingteam-drugs:client:cornerselling"
     },
     ['actions:cuff'] = {
         title = "Cuff",
@@ -328,39 +328,39 @@ newSubMenus = {
     ['houses:givehousekey'] = {
         title = "Give House Keys",
         icon = "#globe-key",
-        functionName = "qb-houses:client:giveHouseKey"
+        functionName = "arabcodingteam-houses:client:giveHouseKey"
     },
     ['houses:removehousekey'] = {
         title = "Remove House Keys",
         icon = "#globe-key",
-        functionName = "qb-houses:client:removeHouseKey"
+        functionName = "arabcodingteam-houses:client:removeHouseKey"
     },
     ['houses:togglelock'] = {
         title = "Toggle Doorlock",
         icon = "#globe-door-closed",
-        functionName = "qb-houses:client:toggleDoorlock"
+        functionName = "arabcodingteam-houses:client:toggleDoorlock"
     },
     ['houses:decoratehouse'] = {
         title = "Decorate House",
         icon = "#globe-house",
-        functionName = "qb-houses:client:decorate"
+        functionName = "arabcodingteam-houses:client:decorate"
     },
     ['houses:setstash'] = {
         title = "Set Stash",
         icon = "#globe-box",
-        functionName = "qb-houses:client:setLocation",
+        functionName = "arabcodingteam-houses:client:setLocation",
         id = 'setstash',
     },
     ['houses:setoutift'] = {
         title = "Set Wardrobe",
         icon = "#globe-shirt",
-        functionName = "qb-houses:client:setLocation",
+        functionName = "arabcodingteam-houses:client:setLocation",
         id = 'setoutift',
     },
     ['houses:setlogout'] = {
         title = "Set Logout",
         icon = "#globe-door-open",
-        functionName = "qb-houses:client:setLocation",
+        functionName = "arabcodingteam-houses:client:setLocation",
         id = "setlogout"
     },
     -- ambulance
@@ -388,17 +388,17 @@ newSubMenus = {
     ['taxi:togglemeter'] = {
         title = "Show/Hide Meter",
         icon = "#ban",
-        functionName = "kd-taxi:client:toggleMeter",
+        functionName = "arabcodingteam-taxi:client:toggleMeter",
     },
     ['taxi:togglemouse'] = {
         title = "Start/Stop Meter",
         icon = "#hourglass",
-        functionName = "kd-taxi:client:enableMeter",
+        functionName = "arabcodingteam-taxi:client:enableMeter",
     },
     ['taxi:npc_mission'] = {
         title = "NPC Mission",
         icon = "#child",
-        functionName = "kd-taxi:client:DoTaxiNpc",
+        functionName = "arabcodingteam-taxi:client:DoTaxiNpc",
     },
     -- two
     ['tow:togglenpc'] = {
@@ -409,24 +409,24 @@ newSubMenus = {
     ['tow:towvehicle'] = {
         title = "Tow vehicle",
         icon = "#car",
-        functionName = "kd-tow:client:TowVehicle",
+        functionName = "arabcodingteam-tow:client:TowVehicle",
     },
     -- mechanic
     ['mechanic:towvehicle'] = {
         title = "Tow vehicle",
         icon = "#car",
-        functionName = "kd-tow:client:TowVehicle",
+        functionName = "arabcodingteam-tow:client:TowVehicle",
     },
     -- police
     ['police:checkvehstatus'] = {
         title = "Check Tune Status",
         icon = "#car",
-        functionName = "kd-tunerchip:client:TuneStatus",
+        functionName = "arabcodingteam-tunerchip:client:TuneStatus",
     },
     ['police:resethouse'] = {
         title = "Reset house lock",
         icon = "#globe-key",
-        functionName = "qb-houses:client:ResetHouse",
+        functionName = "arabcodingteam-houses:client:ResetHouse",
     },
     ['police:takedriverlicense'] = {
         title = "Revoke Drivers License",
@@ -498,7 +498,7 @@ newSubMenus = {
     ['hotdog:togglesell'] = {
         title = "Toggle sell",
         icon = "#globe-hotdog",
-        functionName = "kd-hotdogjob:client:ToggleSell",
+        functionName = "arabcodingteam-hotdogjob:client:ToggleSell",
     },
 }
 
@@ -569,89 +569,3 @@ AddEventHandler('polyzonehelper:exit', function(name)
         inDepots = false
     end
 end)
-
--- -- kd-garages
--- CreateThread(function()
---     for k, v in pairs(Garages) do --Public Garage
---         exports['polyzonehelper']:AddBoxZone("InGarage", Garages[k].pz, Garages[k].length, Garages[k].width, {
---             name="InGarage",
---             heading=Garages[k].heading,
---             minZ=Garages[k].minZ,
---             maxZ=Garages[k].maxZ,
---             debugPoly=Garages[k].debugPz
---         })
---     end
---     for k, v in pairs(JobGarages) do --Job Garage
---         exports['polyzonehelper']:AddBoxZone("InJobGarage", JobGarages[k].pz, JobGarages[k].length, JobGarages[k].width, {
---             name="InJobGarage",
---             heading=JobGarages[k].heading,
---             minZ=JobGarages[k].minZ,
---             maxZ=JobGarages[k].maxZ,
---             debugPoly=JobGarages[k].debugPz
---         })
---     end
---     for k, v in pairs(GangGarages) do --Gang Garage
---         exports['polyzonehelper']:AddBoxZone("InGangGarage", GangGarages[k].pz, GangGarages[k].length, GangGarages[k].width, {
---             name="InGangGarage",
---             heading=GangGarages[k].heading,
---             minZ=GangGarages[k].minZ,
---             maxZ=GangGarages[k].maxZ,
---             debugPoly=GangGarages[k].debugPz
---         })
---     end
---     for k, v in pairs(Depots) do --Depot Garage
---         exports['polyzonehelper']:AddBoxZone("InDepots", Depots[k].pz, Depots[k].length, Depots[k].width, {
---             name="InDepots",
---             heading = Depots[k].heading,
---             debugPoly= Depots[k].debugPz
---         })
---     end
--- end)
-
--- AddEventHandler('polyzonehelper:enter', function(name)
---     if LocalPlayer.state["isLoggedIn"] then
---         if name == "InGarage" then
---             inGarage = true
---             print('Garage: enter')
---         elseif name == "InDepots" then
---             inDepots = true
---             print('Depot: enter')
---         elseif name == "InJobGarage" then
---             inJobGarage = true
---             print('JobGarage: Enter')
---         elseif name == "InGangGarage" then
---             inGangGarage = true
---             print('GangGarage: Enter')
---         end
---     end
--- end)
-
--- AddEventHandler('polyzonehelper:exit', function(name)
---     if LocalPlayer.state["isLoggedIn"] then
---         if name == "InGarage" then
---             inGarage = false
---             print('Garage: exit')
---         elseif name == "InDepots" then
---             inDepots = false
---             print('Depot: exit')
---         elseif name == "InJobGarage" then
---             inJobGarage = false
---             print('JobGarage: Exit')
---         elseif name == "InGangGarage" then
---             inGangGarage = false
---             print('GangGarage: Exit')
---         end
---     end
--- end)
-
--- exports("ZoneType", function(Zone)
---     if Zone == "GarageZone" then
---         return inGarage
---     elseif Zone == "DepotZone" then
---         return inDepots
---     elseif Zone == "JobGarageZone" then
---         return inJobGarage
---     elseif Zone == "GangGarageZone" then
---         return inGangGarage
---     end
--- end)
