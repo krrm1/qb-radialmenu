@@ -1,5 +1,5 @@
 # arabcodingteam-radialmenu
-arabcodingteam-radialmenu np style
+
 have fun dont sell it or i will f your mom 
 need
 ```arabcodingteam-garages``` https://github.com/arabcodingteam/arabcodingteam-garages
