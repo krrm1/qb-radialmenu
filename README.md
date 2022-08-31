@@ -1,8 +1,8 @@
-# arabcodingteam-radialmenu
+# qb-radialmenu
 
 have fun dont sell it or i will f your mom 
 need
-```arabcodingteam-garages``` https://github.com/arabcodingteam/arabcodingteam-garages
+```arabcodingteam-garages``` https://github.com/arabcodingteam/qb-garages
 
 need
 ```polyzonehelper```
