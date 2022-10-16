@@ -2,7 +2,7 @@
 
 have fun dont sell it or i will f your mom 
 need
-```arabcodingteam-garages``` https://github.com/arabcodingteam/qb-garages
+```krrm1-garages``` https://github.com/krrm1/qb-garages
 
 need
 ```polyzonehelper```
