@@ -1,5 +1,9 @@
 # qb-radialmenu
 
+have fun dont sell it or i will f your mom 
+need
+```krrm1-garages``` https://github.com/krrm1/qb-garages
+
 need
 ```polyzonehelper```
 
