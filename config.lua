@@ -16,8 +16,8 @@ rootMenuConfig =  {
         subMenus = {"general:givenum"}
     },
     {
-        id = "general:walks",
-        displayName = "Walks Style",
+        id = "general:walk",
+        displayName = "Walking Style",
         icon = "#walking",
         functionName = "qb-walks:menu",
         enableMenu = function()
