@@ -2,13 +2,13 @@
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
-- [vehcontrol](https://github.com/vehcontrol)
+- [vehcontrol](https://github.com/Manvaril/vehcontrol/archive/refs/tags/1.1.7.zip)
 
 ## Screenshots
-![radialmenu]()
-![walkingmenu]()
-![jobs]()
-![vehcontrol]()
+![radialmenu](https://user-images.githubusercontent.com/89742984/211085277-c7a05a7e-67e0-4ee0-87f3-053caf2c1a20.png)
+![walkingmenu](https://user-images.githubusercontent.com/89742984/211085537-9cc1821d-7243-4103-9935-29794b7ae06c.png)
+![jobs](https://user-images.githubusercontent.com/89742984/211085633-1980406c-3476-4003-bdcb-7653687fae56.png)
+![vehcontrol](https://user-images.githubusercontent.com/89742984/211085724-07475479-e6a4-4539-a6a7-72c110e5e401.png)
 
 ## Features
 - House Decor
