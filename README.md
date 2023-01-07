@@ -2,7 +2,7 @@
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
-- [vehcontrol](https://github.com/Manvaril/vehcontrol/archive/refs/tags/1.1.7.zip)
+- [vehcontrol](https://github.com/Manvaril/vehcontrol)
 
 ## Screenshots
 ![radialmenu](https://user-images.githubusercontent.com/89742984/211085277-c7a05a7e-67e0-4ee0-87f3-053caf2c1a20.png)
